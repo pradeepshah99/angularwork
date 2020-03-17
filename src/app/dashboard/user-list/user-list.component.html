@@ -1,0 +1,54 @@
+<app-header>
+
+</app-header>
+
+
+
+
+<div class="card ml-auto ">
+    <button class="card-header btn btn-success textcolor " routerLink="/dashboard/user-list/adduser">
+        
+        Add New User
+    </button>
+</div>
+<table class="table table-striped">
+    <thead class="thead-dark">
+
+        <tr>
+            <th scope="col">User Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Action</th>
+            <!-- <th scope="col">Password</th> -->
+            <th>
+                <a routerLink="/dashboard" class="arrow">
+                    Back</a>
+            </th>
+        </tr>
+
+    </thead>
+    <tr *ngFor="let user of data">
+        <td>{{user._id | json}}</td>
+        <td>{{user.f_name | json}}</td>
+        <td>{{user.l_name | json}}</td>
+        <td>{{user.email | json}}</td>
+        <td>
+            <button type="submit" class="btn btn-danger" (click)='ondeleteUser(user._id)'>Delete</button> &nbsp;
+            <button type="submit" class="btn btn-info" (click)="editUser(user)">Edit</button>
+        </td>
+
+        <!-- <td>{{user.password | json}}</td> -->
+
+
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+<app-footer></app-footer>

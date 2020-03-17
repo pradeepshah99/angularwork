@@ -1,0 +1,91 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+<div class="container" style="margin-top: 100px;">
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <form>
+                <div class="form-group row">
+                    <label for="text" class="col-sm-2 col-form-label">Product Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Product Name" [(ngModel)]="productData.p_name" name="p_name">
+
+                        <!-- <small *ngIf="submitted && pName.errors" class="invalid-feedback">
+                            <small *ngIf="pName.errors?.required"> Product name is required</small>
+                        </small> -->
+                    </div>
+
+
+                </div>
+
+                <div class="form-group row">
+                    <label for="product" class="col-sm-2 col-form-label">Product Description:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder=" Product Description" [(ngModel)]="productData.p_desc" name="p_desc">
+
+                        <!-- <div *ngIf="submitted && pDesc.errors" class="invalid-feedback">
+                            <div *ngIf="pDesc.errors.required"> Product ID is required</div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <label for="price" class="col-sm-2 col-form-label">Product Image:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Enter Price" [(ngModel)]="productData.p_image" name="p_image">
+
+                        <!-- <div *ngIf="submitted && pImage.errors" class="invalid-feedback">
+                            <div *ngIf="pImage.errors.required">Image Is Required</div>
+
+                        </div> -->
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <label for="price" class="col-sm-2 col-form-label">Reviews:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Enter Price" [(ngModel)]="productData.reviews" name="reviews">
+
+                        <!-- <div *ngIf="submitted && reviews.errors" class="invalid-feedback">
+                            <div *ngIf="reviews.errors.required">Reviews is required</div>
+
+                        </div> -->
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <button class="btn btn-danger" routerLink="/dashboard/products">Cancel</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-success" type="Submit" (click)="updateProduct()"> 
+                            Save Product
+                    </button>
+
+                    </div>
+                    <div class="col-md-3">
+
+
+
+                    </div>
+                </div>
+
+            </form>
+
+
+            <!-- <div class="col-sm-3"></div> -->
+        </div>
+    </div>

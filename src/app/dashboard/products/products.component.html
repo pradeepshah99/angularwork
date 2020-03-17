@@ -1,0 +1,104 @@
+<app-header>
+</app-header>
+<div class="card ml-auto ">
+    <button class="card-header btn btn-success textcolor " routerLink="/dashboard/products/addproduct">
+        Add New Products
+    </button>
+</div>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Product Image</th>
+            <th scope="col">Reviews</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <!-- <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Paracip</td>
+            <td>P-123</td>
+            <td>₹14.00</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Meftal Spas</td>
+            <td>MF- 12</td>
+            <td>₹28.1</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Proxyvon</td>
+            <td>PRC - 1445</td>
+            <td>₹20.50</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Amoxicillin</td>
+            <td>AMO-1224</td>
+            <td>₹112.20</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>Ativan</td>
+            <td>ATI-112</td>
+            <td>₹141.75</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>Adderall</td>
+            <td>ADDRE@444</td>
+            <td>₹75.25</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>Amitriptyline</td>
+            <td>AMI-8897</td>
+            <td>₹65.55</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>Vikas</td>
+            <td>VK-12</td>
+            <td>₹44.00</td>
+        </tr>
+        <tr>
+            <th scope="row">9</th>
+            <td>Disperine</td>
+            <td>DSP-88</td>
+            <td>₹25.25</td>
+        </tr>
+    </tbody> -->
+
+    <tr *ngFor="let product of data">
+        <td>{{product._id | json}}</td>
+        <td>{{product.p_name | json}}</td>
+        <td>{{product.p_desc | json}}</td>
+        <td>{{product.p_image | json}}</td>
+        <!-- <td>{{product.obj_id | json}}</td> -->
+        <td>{{product.reviews | json}}</td>
+        <td> <button type="submit" class="btn btn-danger" (click)='onDeleteProduct(product._id)'>Delete</button> &nbsp;
+            <button class="btn btn-success" (click)="editProduct(product)">Edit</button>
+        </td>
+
+
+
+        <!-- <td>{{user.password | json}}</td> -->
+
+
+    </tr>
+
+
+</table>
+
+
+
+
+
+
+<app-footer></app-footer>

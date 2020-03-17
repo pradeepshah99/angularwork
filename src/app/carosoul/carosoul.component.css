@@ -1,0 +1,33 @@
+.banner {
+    height: 440px;
+    background: url("../../assets/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%, auto, cover;
+}
+
+.imgtexting {
+    color: white;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.bannerlink {
+    height: 50px;
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.textdecor {
+    color: white;
+    font-weight: bold;
+}
+
+.textdecor:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}

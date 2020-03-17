@@ -1,0 +1,36 @@
+.foot {
+    position: absolute;
+    bottom: 0px;
+    height: auto;
+    border: 1px solid black;
+    background-color: #272727;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.foot_text {
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+.booktext {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+
+/* .footer {
+    position: relative;
+    top: 10px;
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+    
+} */

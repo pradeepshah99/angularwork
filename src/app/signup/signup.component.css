@@ -1,0 +1,17 @@
+.backimg {
+    background-image: url("../../assets/signup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+body html {
+    margin: 0;
+    padding: 0;
+}
+
+.ancor {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,73 @@
+.padding3 {
+    position: relative;
+    top: 50px;
+}
+
+.welh1 {
+    font-family: fantasy;
+    text-align: center;
+    color: grey;
+    font-size: small;
+}
+
+.padding2 {
+    padding-top: 50px;
+}
+
+.welh2 {
+    font-family: fantasy;
+    text-align: center;
+}
+
+.hr {
+    width: 60px;
+    height: 2px;
+    background-color: orange;
+}
+
+.textupload {
+    padding-top: 40px;
+    padding-left: 80px;
+    text-align: center;
+}
+
+.uplaodtxt {
+    padding-left: 90px;
+    text-align: center;
+}
+
+.uplaodtxt1 {
+    padding-left: 25px;
+}
+
+.textdec {
+    font-size: 13px;
+    ;
+}
+
+.imgreview {
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+
+.textreview {
+    padding-top: 52px;
+    padding-left: 70px;
+}
+
+.imgdel {
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.textdel {
+    padding-top: 40px;
+}
+
+.imgupload {
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
